@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="remote.js"></script>
+    <script src="tv.js"></script>
+</head>
+<body>
+            <script>
+                let samsung= new Tivi(1,15,235);
+                let control=new Control(235);
+                control.conect(samsung);
+                console.log(samsung.status);
+                control.turnonoff();
+                console.log(samsung.status);
+                console.log(samsung.chanel);
+                console.log(samsung.volume);
+                control.chanelUp();
+                control.chanelUp();
+                control.chanelUp();control.chanelUp();
+                control.upVolume();
+                control.upVolume();
+                control.upVolume();control.upVolume();
+                control.upVolume();
+                control.upVolume();
+                control.upVolume();
+                control.upVolume();
+                console.log(samsung.chanel);
+                console.log(samsung.volume);
+
+            </script>
+</body>
+</html>
